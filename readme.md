@@ -44,9 +44,12 @@ account of non–inertial effects of the (geo)synchronous reference frame.
 # References
 
 A. http://earth-info.nga.mil/GandG/publications/tr8350.2/wgs84fin.pdf
+
 B. http://earth-info.nga.mil/GandG/publications/tr8350.2/tr8350.2-a/Chapter%203.pdf
    http://earth-info.nga.mil/GandG/publications/tr8350.2/tr8350.2-a/Chapter%204.pdf
+
 C. Bernhard Hofmann-Wellenhof, Helmut Moritz; Physical Geodesy (2006)
+
 D. Zhu, "Conversion of Earth-centered Earth-fixed coordinates to geodetic
    coordinates," Aerospace and Electronic Systems, IEEE Transactions on, vol. 30,
    pp. 957–961, 1994.
