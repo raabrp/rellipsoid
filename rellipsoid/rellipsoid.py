@@ -412,14 +412,14 @@ class Planet:
         the observer's perspective) and away from the nearest pole.
 
                                            Y
-                                          /|
-                                         /|
-                                        / |
-                                    N  / |
-                              _ .. ```/..X_
-                            /   /   |/  \   \
+                                          ╱|
+                                         ╱|
+                                        ╱ |
+                                    N  ╱ |
+                              _ .. ```╱..X_
+                            ╱   ╱   |╱  ╲   ╲
                            (   |   w->   |   )
-                            \   \   |   /   /
+                            ╲   ╲   |   ╱   ╱
                               ` ---...--- `
                                     S
         '''
@@ -510,12 +510,12 @@ class Planet:
         Local Cartesian coordinates:
 
                                Ns  Y (On surface)
-                                \  |
-                            N-. p\a|
-                            ___`-.\|______X (On surface)
-                                  /|
-                                 / |
-                                /  |
+                                ╲  |
+                            N-. p╲a|
+                            ___`-.╲|______X (On surface)
+                                  ╱|
+                                 ╱ |
+                                ╱  |
                           (Up) Z
 
         Ns: Cardinal North (on surface, XY plane)
@@ -553,12 +553,12 @@ class Planet:
             # is East (surface), and Z is normal to surface
             #
             #        Ns  Y (surf)                     Ns
-            #         \  |                        N    |
-            #     N-. p\a|                         `. p|
-            #     ___`-.\|______X (surf)        _____`.|______Y (East)
-            #           /|                            /|
-            #          / |                           / |
-            #         /  |                          /  |
+            #         ╲  |                        N    |
+            #     N-. p╲a|                         `. p|
+            #     ___`-.╲|______X (surf)        _____`.|______Y (East)
+            #           ╱|                            ╱|
+            #          ╱ |                           ╱ |
+            #         ╱  |                          ╱  |
             #   (Up) Z                             Z   X
             #
             # Rotate world around Y by (pi/2 - phi) so X parallel to Equatorial
@@ -569,11 +569,11 @@ class Planet:
             # reference meridian
             #
             #       X (Parallel to Equator)
-            #        \         Z, N (North Celestial Pole)
-            #         \  / _.-`
-            #     _____\.-`p____Ns
-            #          /
-            #         /
+            #        ╲         Z, N (North Celestial Pole)
+            #         ╲  ╱ _.-`
+            #     _____╲.-`p____Ns
+            #          ╱
+            #         ╱
             #        Y (East on Surface)
             #
             # p: (phi) latitude
@@ -611,12 +611,12 @@ class Planet:
             Local Cartesian coordinates:
 
                                Ns  Y (On surface)
-                                \  |
-                            N-. p\a|
-                            ___`-.\|______X (On surface)
-                                  /|
-                                 / |
-                                /  |
+                                ╲  |
+                            N-. p╲a|
+                            ___`-.╲|______X (On surface)
+                                  ╱|
+                                 ╱ |
+                                ╱  |
                           (Up) Z
 
             Ns: Cardinal North (on surface, XY plane)
@@ -649,12 +649,12 @@ class Planet:
             Local Cartesian coordinates:
 
                                Ns  Y (On surface)
-                                \  |
-                            N-. p\a|
-                            ___`-.\|______X (On surface)
-                                  /|
-                                 / |
-                                /  |
+                                ╲  |
+                            N-. p╲a|
+                            ___`-.╲|______X (On surface)
+                                  ╱|
+                                 ╱ |
+                                ╱  |
                           (Up) Z
 
             Ns: Cardinal North (on surface, XY plane)
@@ -703,12 +703,12 @@ class Planet:
         Local Cartesian coordinates:
 
                    Ns  Y (On surface)
-                    \  |
-                N-. p\a|                                ___ Direction of motion
-                ___`-.\|______X (On surface)          _.-`/ relative to
-                      /|                          _.-`      geocenter (vector
-                     / |                      _.-`          on surface of
-                    /  |                   .-`              ellipsoid)
+                    ╲  |
+                N-. p╲a|                                ___ Direction of motion
+                ___`-.╲|______X (On surface)          _.-`╱ relative to
+                      ╱|                          _.-`      geocenter (vector
+                     ╱ |                      _.-`          on surface of
+                    ╱  |                   .-`              ellipsoid)
               (Up) Z
 
         Ns: Cardinal North (on surface, XY plane)
@@ -756,12 +756,12 @@ class Planet:
             #
             #   F-------------- __.A0 -      Ao: point where frames were
             #                 A`    | |           coincident
-            #                  \    | |       A: point on surface at later
-            #                   \   | |          time (origin of N)
-            #     Y              \wt| | r
-            #     |               \ | |
-            #     |___ X           \| |
-            #    /             Axis + -
+            #                  ╲    | |       A: point on surface at later
+            #                   f   | |          time (origin of N)
+            #     Y              ╲wt| | r
+            #     |               ╲ | |
+            #     |___ X           ╲| |
+            #    ╱             Axis + -
             #   Z
             #
             #  w: omega
@@ -780,12 +780,12 @@ class Planet:
             # surface at A0, Y is South, and X is West
             #
             #               Ns                 Ns  Y (On surface)
-            #               |                   \  |
-            #               |                    \a|
-            # (West) X______|_______        ______\|______X (On surface)
-            #              /|                     /|
-            #             / |                    / |
-            #            /  |                   /  |
+            #               |                   ╲  |
+            #               |                    ╲a|
+            # (West) X______|_______        ______╲|______X (On surface)
+            #              ╱|                     ╱|
+            #             ╱ |                    ╱ |
+            #            ╱  |                   ╱  |
             #      (Up) Z   Y South       (Up) Z
             #
             # Rotate world around Z by (pi + az) so Y axis points to
