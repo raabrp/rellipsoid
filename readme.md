@@ -3,9 +3,10 @@
 Reference ellipsoidal gravitational and rotational model, instantiated with 
 WSG84 values for Earth
 
-Expected error of calculated values for gravity is less than 0.05% in the
-surface normal component and 0.00002% in the transverse component (assuming
-correct implementation).
+Expected error of calculated values for gravity is less than 0.02% in the
+surface normal component and 0.07% in the transverse component where percentages
+are given relative to the total magnitude of the computed gravity vector 
+(assuming correct implementation).
 
 This should be evaluated relative to the fact the value of felt gravity differs
 from its nominal value (9.80665 m/s^2) by extremes of +0.28% and -0.44% over
@@ -131,7 +132,8 @@ From the GRACE data, we note that gravitational potential can differ from
 the predictions of the ellipsoidal model by 0.02% near the surface of
 Earth, though such deviations are typically less than 0.005%. Ignoring the
 transverse components of gravity caused by such irregularities, this
-translates to errors of up to 0.02% in the magnitude of observed gravity.
+translates to errors of up to 0.02% in the magnitude of the calculated gravity
+vector.
 
 Accounting for vertical deflection, we note maximum deflections at Earth's
 surface of up to 100 arc-seconds (4.8e-4 radians), yielding 0.00001% uncertainty
@@ -147,10 +149,11 @@ the planet and consider that the force of gravity linear in the planet's mass
 of centrifugal force).
 
 We evaluate the ellipsoidal gravitational model for earth implemented here as
-accurate to +/- 0.02% in the vertical component and +/- 0.0065% in the
-transverse component – given as percentages of total magnitude of the computed
-gravity vector – everywhere on or near Earth's surface
+accurate to +/- 0.02% in the vertical component and +/- 0.07% in the
+transverse component (where percentages are given relative to the total
+magnitude of the calculated gravity vector) everywhere on or near Earth's
+surface
 
-All of this assumes of course that our implementation or analysis is not flawed,
-for which I make no enforceable assurances or guarantees. Use at your own risk
-(see license.txt for full disclaimer).
+All of this assumes of course that our neither our implementation nor our
+analysis is flawed. This package it NOT intended for mission-critical
+calculations or simulation. See license.txt for more information.
