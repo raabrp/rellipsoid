@@ -15,11 +15,16 @@ Earth's surface.
 Basic coordinate transformations are included for convenience, allowing for full
 account of non–inertial effects of the (geo)synchronous reference frame.
 
-# Requirements
+# Installation
 
-* Written for python3
-* requires numpy
-* requires pytest for testing
+## PyPi
+
+`pip3 install --user rellipsoid`
+
+## From source
+
+Clone or download the source from [github](https://github.com/raabrp/rellipsoid)
+Numpy and (for testing) pytest are required.
 
 # Usage
 
