@@ -55,11 +55,17 @@ full account of non–inertial effects of the (geo)synchronous reference frame.
 
 # References
 
-A. National Imagery and Mapping Agency Technical Report:
-   http://earth-info.nga.mil/GandG/publications/tr8350.2/wgs84fin.pdf
-B. http://earth-info.nga.mil/GandG/publications/tr8350.2/tr8350.2-a/Chapter%203.pdf
-   http://earth-info.nga.mil/GandG/publications/tr8350.2/tr8350.2-a/Chapter%204.pdf
+A. NIMA Technical Report TR8350.2, "Department of Defense World Geodetic System 
+1984, Its Definition and Relationships With Local Geodetic Systems", Third 
+Edition, Amendment 1, 3 January 2000: [link](http://earth-info.nga.mil/GandG/publications/tr8350.2/wgs84fin.pdf)
+
+B. NIMA Technical Report TR8350.2, "Department of Defense World Geodetic System 
+1984, Its Definition and Relationships With Local Geodetic Systems", Second
+Edition: Chapters [3](http://earth-info.nga.mil/GandG/publications/tr8350.2/tr8350.2-a/Chapter%203.pdf) and
+[4](http://earth-info.nga.mil/GandG/publications/tr8350.2/tr8350.2-a/Chapter%204.pdf)
+
 C. Bernhard Hofmann-Wellenhof, Helmut Moritz; Physical Geodesy (2006)
+
 D. Zhu, "Conversion of Earth-centered Earth-fixed coordinates to geodetic
    coordinates," Aerospace and Electronic Systems, IEEE Transactions on, vol. 30,
    pp. 957–961, 1994.
