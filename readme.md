@@ -1,12 +1,12 @@
 # Reference Ellipsoid (WSG84)
 
 Reference ellipsoidal gravitational and rotational model, instantiated with 
-WSG84 values for Earth
+WSG84 values for Earth.
 
 Expected error of calculated values for gravity is less than 0.02% in the
-surface normal component and 0.07% in the transverse component where percentages
-are given relative to the total magnitude of the computed gravity vector 
-(assuming correct implementation).
+surface normal component and 0.07% in the transverse component, where
+percentages are given relative to the total magnitude of the computed gravity
+vector (assuming correct implementation).
 
 This should be evaluated relative to the fact the value of felt gravity differs
 from its nominal value (9.80665 m/s^2) by extremes of +0.28% and -0.44% over
@@ -135,24 +135,25 @@ transverse components of gravity caused by such irregularities, this
 translates to errors of up to 0.02% in the magnitude of the calculated gravity
 vector.
 
-Accounting for vertical deflection, we note maximum deflections at Earth's
-surface of up to 100 arc-seconds (4.8e-4 radians), yielding 0.00001% uncertainty
-in the vertical component (as a percentage of the total magnitude) and 0.048% in
-the transverse component.
-
-https://en.wikipedia.org/wiki/Vertical_deflection
+Accounting for 
+[vertical deflection](https://en.wikipedia.org/wiki/Vertical_deflection), we 
+note maximum deflections at Earth's surface of up to 100 arc-seconds (4.8e-4 
+radians), yielding 0.00001% uncertainty in the vertical component (as a 
+percentage of the total magnitude) and 0.048% in the transverse component. Note
+that we use the geodetic definition of "vertical" (normal to the reference
+ellipsoid).
 
 Finally, in consideration of our choice of value for GM (which differs from the
-updated value), we note that the mass of the atmosphere is ~0.0001% of that of 
-the planet and consider that the force of gravity linear in the planet's mass
-(this is approximately true, but only for pure gravitation - not the effects
-of centrifugal force).
+updated value by subtracting the mass of the atmosphere), we note that the mass
+of the atmosphere is ~0.0001% of that of the planet and consider that the force
+of gravity linear in the planet's mass (this is approximately true: only for
+pure gravitation, not the effects of centrifugal force).
 
-We evaluate the ellipsoidal gravitational model for earth implemented here as
-accurate to +/- 0.02% in the vertical component and +/- 0.07% in the
+We expect the ellipsoidal gravitational model, as implemented here for Earth,
+to be accurate to +/- 0.02% in the vertical component and +/- 0.07% in the
 transverse component (where percentages are given relative to the total
 magnitude of the calculated gravity vector) everywhere on or near Earth's
-surface
+surface.
 
 All of this assumes of course that our neither our implementation nor our
 analysis is flawed. This package it NOT intended for mission-critical
