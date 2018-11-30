@@ -23,8 +23,9 @@ account of non–inertial effects of the (geo)synchronous reference frame.
 
 ## From source
 
-Clone or download the source from [github](https://github.com/raabrp/rellipsoid)
-Numpy and (for testing) pytest are required.
+Clone or download the source from [github](https://github.com/raabrp/rellipsoid)i
+
+`numpy` and (for testing) `pytest` are required.
 
 # Usage
 
